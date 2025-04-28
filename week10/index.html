@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiểm tra số chẵn lẻ</title>
+</head>
+<body>
+  <form>
+    <input type="text" id="number1" placeholder="Nhập một số" />
+    <button type="button" onclick="checkNumber();" id="check_button">Check</button>
+    <button type="button" onclick="resetNew();" id="reset_button" style="display: none;">Reset</button>
+    <p id="result" style="color: red;"></p>
+  </form>
+
+  <script>
+    function checkNumber() {
+      // show reset button
+      document.getElementById("reset_button").style.display = "block";
+
+      // hide check button
+      document.getElementById("check_button").style.display = "none";
+
+      var x = parseInt(document.getElementById("number1").value);
+
+      if (isNaN(x)) {
+        document.getElementById("result").innerHTML = "Vui lòng nhập một số hợp lệ.";
+      } else if (x % 2 === 0) {
+        document.getElementById("result").innerHTML = x + " là số chẵn.";
+      } else {
+        document.getElementById("result").innerHTML = x + " là số lẻ.";
+      }
+    }
+
+    function resetNew() {
+      // reset the text
+      document.getElementById("result").innerHTML = "";
+
+      // reset the input
+      document.getElementById("number1").value = "";
+
+      // hide reset button
+      document.getElementById("reset_button").style.display = "none";
+
+      // show check button
+      document.getElementById("check_button").style.display = "block";
+    }
+  </script>
+</body>
+</html>

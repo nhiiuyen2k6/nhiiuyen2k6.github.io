@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(208, 112, 189);
+    margin: 0;
+}
+*{
+    font-family: Arial, sans-serif, Helvetica;
+}
+header{
+    padding: 20px 0;
+    background-color: rgb(208, 129, 197);
+    display: flex;
+}
+header img{
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+}
+.title-container{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-container h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    color:white;
+}
+
+.container{
+    padding: 20px;
+    background-color: rgb(220, 153, 199);
+    display: flex;
+}
+.sider, .content{
+width: calc(50% - 10px);
+background-color: rgb(229, 191, 220);
+padding:20px;
+}
