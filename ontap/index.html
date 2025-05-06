@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tiêu đề</h1> 
+    <!-- Trong một trang web chỉ duy nhất một thẻ H1  -->
+    <h2>Tiêu đề 2</h2>
+    <!-- Trong một trang web chỉ có 6 thẻ h1,h2,h3,h4,h5,h6 -->
+    <p>Chúng tôi đơn giản là gấu</p>
+    <!-- Thẻ p sử dụng cho một đoạn văn -->
+    <p>Chúng tôi yêu <b>Việt Nam</b></p>
+    <!-- Thẻ b là in đậm chữ mà mình muốn -->
+    <p>Chúng tôi yêu <u>hoà bình</u></p>
+    <!-- Thẻ u dùng để gạch chân chữ cái mà mình muốn -->
+    <p>Chúng tôi yêu <i>đất nước</i></p>
+    <!-- Thẻ i dùng để in nghiêng chữ cái mà mình muốn -->
+    <p>Chúng tôi yêu <mark>Minh Châu</mark></p>
+    <!-- Sử dụng cá thẻ có tính liên kết -->
+    <a href="./link">Home</a> <br>
+    <a href="./link">About</a> <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWphenrFmicwysLQ7LtQdOxkPkS0EbrcckaA&s" alt="Hình ảnh minh hoạ">
+
+    <!-- Tạo bảo trong một trang web -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Tuổi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Uyển Nhi</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minh Sơn</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Minh Châu</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>3</td>
+                <td>3 Người</td>
+                <td>40</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- ở trong một bố cục của table thì cần 3 bố đa phần thì sử dụng 2 phần là thead vs tbody -->
+    
+    <!-- Các thẻ tạo ra các tiêu đề nhỏ -->
+    <!-- Thẻ ul là thẻ ko có sự sắp xếp -->
+     <nav>
+    <ul>
+        <li>Uyển Nhi</li>
+        <li>Minh Sơn</li>
+        <li>Minh Châu</li>
+    </ul>
+    </nav>
+    
+    <!-- Thẻ ol là thẻ có sự sắp xếp -->
+    <ol>
+        <li>Uyển Nhi</li>
+        <li>Minh Sơn</li>
+        <li>Minh Châu</li>
+    </ol>
+    
+    <hr> 
+    <!-- Thẻ hr là thẻ tạo ra một đường kẻ ngang -->
+
+    <details>
+        <p>Lê Minh Sơn</p>
+    </details>
+    <!-- Thẻ details là thẻ sử dụng để đóng mở các văn bản mà bạn muốn ẩn hoặc hiện -->
+    
+    <!-- Sử dụng các thuộc tính trong FORM -->
+    <form>
+        <!-- thẻ LABEL luôn đi kèm với thẻ INPUT -->
+        <label for="name">Họ và tên:</label>
+        <input type="text"> <br>
+        <label for="email">Email:</label>
+        <input type="email"> <br>
+        <label for="date">Ngày tháng năm:</label>
+        <input type="date">
+        <label for="address">Địa chỉ:</label>
+        <textarea name="address"></textarea> <br>
+        <!-- Select Định dạng để bạn lựa chọn -->
+        <label>Bạn ở nước gì:</label>
+        <!-- Select luôn đi với option -->
+        <select name="country">
+            <option value="vn">Việt Nam</option>
+            <option value="jp">Nhật Bản</option>
+            <option value="us">Mỹ</option>
+        <select> <br>
+        <!-- radio để cho sự lựa duy nhất và định đó có hình tròn -->
+        <label>Giới tính:</label>
+        <input type="radio">
+        <label for="male">Nam</label>    
+        <input type="radio">
+        <label for="female">Nữ</label> 
+        <br>
+        <!-- checkbox để cho sự lựa chọn nhất định -->
+        <label for="">Bạn muốn vào vị trí nào trong công ty:</label>
+        <input type="checkbox">
+        <label for="">Intership</label>
+        <input type="checkbox">
+        <label for="">Fresher</label>
+        <br>
+        <button type="submit">Chấp nhận</button>
+    </form>
+</body>
+</html>
